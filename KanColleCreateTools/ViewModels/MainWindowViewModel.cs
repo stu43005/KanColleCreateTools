@@ -18,9 +18,9 @@ namespace KanColleCreateTools.ViewModels
 		public MainWindowViewModel()
 		{
 			this.Fuel = new ResViewModel("燃料", 300, 10, 10);
-			this.Ammunition = new ResViewModel("彈藥", 300, 10, 10);
+			this.Ammunition = new ResViewModel("弾薬", 300, 10, 10);
 			this.Steel = new ResViewModel("鋼材", 300, 10, 10);
-			this.Bauxite = new ResViewModel("鋁土", 300, 10, 10);
+			this.Bauxite = new ResViewModel("ボーキサイト", 300, 10, 10);
 
 			Observable.Interval(TimeSpan.FromSeconds(5))
 				.Subscribe(_ => Debug.WriteLine(Cursor.Position.ToString()));
